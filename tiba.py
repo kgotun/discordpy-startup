@@ -5,6 +5,7 @@ import re
 
 client = discord.Client()
 channel_sent = None
+token = os.environ['DISCORD_BOT_TOKEN']
 
 @client.event
 async def on_ready():
@@ -156,4 +157,4 @@ async def on_message(message):
     if re.search(r'岩手',message.content) :
         await message.channel.send('島流し定期')
         
-client.run("DISCORD_BOT_TOKEN")
+bot.run("DISCORD_BOT_TOKEN")
