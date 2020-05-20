@@ -157,4 +157,4 @@ async def on_message(message):
     if re.search(r'岩手',message.content) :
         await message.channel.send('島流し定期')
         
-bot.run("DISCORD_BOT_TOKEN")
+bot.run(token)
